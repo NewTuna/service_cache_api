@@ -21,8 +21,9 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 ## 개발 노트
 + UseCase 1. Query
   * RestAPI 구현 
-  * Category, Product 조회시 DataBase를 통한 데이터가 조회가 아닌 CategoryCache, ProductCache에서 조회하도록 구현
+  * Category, Product 조회시 DataBase를 통한 데이터가 조회가 아닌 CategoryCache, ProductCache에서 조회
   
 + UseCase 2. Data Loading and Reloading
   * InitializingBean을 통해서 초기 기동시 DataBase로부터 CategoryCache, ProductCache에 각각 적재
-  * 데이터 조회 API가 호출되었을 때 Cache Miss가 발생하였을 경우 DataBase로부터 해당 데이터를 Cache에 재적재 (LRU 알고리즘)
+  * 데이터 조회 API가 호출되었을 때 Cache Miss가 발생하였을 경우 DataBase로부터 해당 데이터를 Cache에 재적재 
+    (LRU 알고리즘)
