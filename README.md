@@ -50,12 +50,25 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 |DELETE|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|삭제|
 
 ## RestAPI 요청 샘플링
-### Category 등록  
++ Category 등록  
 curl -d '{"categoryName":"등록테스트", "parentNo":"1", "depth": "2"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/category
 ```
 {
   "result": "true"
 }
 ```
-
++ Category 수정  
+curl -d "categoryName=수정테스트&parentNo=1&depth=2" -H "Content-Type: application/x-www-form-urlencoded" -X PUT http://localhost:8080/api/category/9
+```
+{
+  "result": "true"
+}
+```
++ Category 삭제  
+curl -H "Content-Type: application/x-www-form-urlencoded" -X DELETE http://localhost:8080/api/category/2
+```
+{
+  "result": "true"
+}
+```
 
