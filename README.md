@@ -39,3 +39,9 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 + UseCase 5. DB 데이터 ADD/DELETE/UPDATE
   * RestAPI 구현
   * 유효성 검사 구현
+
+## RestAPI
+1. Category 
+  1-1. Category 리스트 조회 (http://localhost:8080/api/categorylist)
+
+2. Product
