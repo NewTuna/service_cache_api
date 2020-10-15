@@ -25,5 +25,14 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
   
 + UseCase 2. Data Loading and Reloading
   * InitializingBean을 통해서 초기 기동시 DataBase로부터 CategoryCache, ProductCache에 각각 적재
-  * 데이터 조회 API가 호출되었을 때 Cache Miss가 발생하였을 경우 DataBase로부터 해당 데이터를 Cache에 재적재 
-    (LRU 알고리즘)
+  * 데이터 조회 API가 호출시 Cache Miss가 발생하였을 경우 DataBase로부터 해당 데이터를 Cache에 다시 적재
+  
++ UseCase 3. Cache Eviction Policy
+  * CategoryCacheSize : 10, ProductCacheSize : 1000 사이즈 제한 (DataBase에 저장되어있는 개수만큼)
+  * Cache Miss가 발생하였을 경우 Cache Eviction 실행
+  * 가장 최근에 사용되지 않은 데이터를 우선적으로 캐시에서 배제하기 위한 정책 설정 (LRU 알고리즘)
+  
++ UseCase 4. Cache Optimize
+  * Cache에 적재되어 있는 데이터를 갱신하기 위해서 Scheduling 구현
+  * 매 10분마다 CategoryCache, ProductCache Key(CategoryNo, ProductNo)값을 기준으로 
+    DataBase로부터 해당 데이터를 다시 적재
