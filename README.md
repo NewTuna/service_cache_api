@@ -48,3 +48,14 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 |POST|http://localhost:8080/api/category|http://localhost:8080/api/product|등록|
 |PUT|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|수정|
 |DELETE|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|삭제|
+
+## RestAPI 요청 샘플링
++ Category 등록 
+curl -d '{"categoryName":"등록테스트", "parentNo":"1", "depth": "2"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/category
+```
+{
+  "result": "true"
+}
+```
+
+
