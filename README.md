@@ -41,7 +41,7 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
   * 유효성 검사 구현
 
 ## RestAPI
-|제목|내용|설명|
+|Method|Category|Product|
 |------|---|---|
 |테스트1|테스트2|테스트3|
 |테스트1|테스트2|테스트3|
