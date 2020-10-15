@@ -20,8 +20,8 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 
 ## 개발 노트
 + UseCase 1. Query
-  * RestAPI 구현 
-  * Category, Product 조회시 DB를 통한 데이터가 조회가 아닌 CategoryCache, ProductCache에서 조회
+>> RestAPI 구현 
+>> Category, Product 조회시 DB를 통한 데이터가 조회가 아닌 CategoryCache, ProductCache에서 조회
   
 + UseCase 2. Data Loading and Reloading
   * InitializingBean을 통해서 초기 기동시 DB로부터 CategoryCache, ProductCache에 각각 적재
