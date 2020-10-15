@@ -41,13 +41,13 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
   * 유효성 검사 구현
 
 ## RestAPI
-|Method|Category|Product|
-|------|---|---|
-|GET|http://localhost:8080/api/category/list|테스트3|
-|GET|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|
-|POST|테스트2|테스트3|
-|PUT|테스트2|테스트3|
-|DELETE|테스트2|테스트3|
+|Method|Category|Product|설명
+|------|---|---|---|
+|GET|http://localhost:8080/api/category/list||리스트 조회|
+|GET|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|조회|
+|POST|http://localhost:8080/api/category|http://localhost:8080/api/product|등록|
+|PUT|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|수정|
+|DELETE|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|삭제|
 
 Method|Category|Product|설명
 -|-|-|
