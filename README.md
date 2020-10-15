@@ -41,6 +41,12 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
   * 유효성 검사 구현
 
 ## RestAPI
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+
 Method|Category|Product|설명
 -|-|-|
 GET|http://localhost:8080/api/category/list| |리스트 조회
