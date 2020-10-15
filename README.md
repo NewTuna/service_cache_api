@@ -11,3 +11,9 @@
 + Spring Boot 2.3.4.RELEASE
 + Mybatis
 + H2
+
+## 실행
+'''
+mvn clean install -DskipTests
+java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
+'''
