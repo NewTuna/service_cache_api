@@ -50,6 +50,24 @@ java -jar ./target/service_cache_api-0.0.1-SNAPSHOT.jar
 |DELETE|http://localhost:8080/api/category/{categoryNo}|http://localhost:8080/api/product/{productNo}|삭제|
 
 ## RestAPI 요청, 응답 샘플링
++ Category 조회  
+curl -H "Content-Type: application/x-www-form-urlencoded" -X GET http://localhost:8080/api/category/1
+```
+{
+  "categoryNo":1,
+  "categoryName":"스킨케어",
+  "parentNo":0,
+  "depth":1,
+  "products":[
+    {
+      "productNo":1,
+      "productName":"바이탈뷰티(아) 슬리머에스 35EA (16)",
+      "brandName":"바이탈뷰티(시판)",
+      "productPrice":1.125E8
+    },
+    ...
+}
+```
 + Category 등록  
 curl -d '{"categoryName":"등록테스트", "parentNo":"1", "depth": "2"}' -H "Content-Type: application/json" -X POST http://localhost:8080/api/category
 ```
