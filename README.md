@@ -63,7 +63,8 @@ curl -H "Content-Type: application/x-www-form-urlencoded" -X GET http://localhos
       "productNo":1,
       "productName":"바이탈뷰티(아) 슬리머에스 35EA (16)",
       "brandName":"바이탈뷰티(시판)",
-      "productPrice":1.125E8
+      "productPrice":112500000.00,
+      "categoryNo":1
     },
     ...
 }
