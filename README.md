@@ -67,6 +67,7 @@ curl -H "Content-Type: application/x-www-form-urlencoded" -X GET http://localhos
       "categoryNo":1
     },
     ...
+  ]
 }
 ```
 + Category 등록  
